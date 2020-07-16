@@ -1,5 +1,5 @@
-fetch('http://example.com/api-endpoint', {
-  method: 'POST',
+fetch('https://api.scratch.mit.edu/users/you/messages/count', {
+  method: 'GET',
   body: 'hello, api' 
  
 })
