@@ -1,17 +1,1 @@
-const user = {
-    first_name: 'John',
-    last_name: 'Lilly',
-    job_title: 'Software Engineer'
-};
-
-const options = {
-    method: 'POST',
-    body: JSON.stringify(user),
-    headers: {
-        'Content-Type': 'application/json'
-    }
-}
-
-fetch('https://reqres.in/api/users', options)
-    .then(res => res.json())
-    .then(res => console.log(res));
+fetch("https://cors-anywhere.herokuapp.com/https://api.scratch.mit.edu/users/" + user +"/messages/count").then(res => res.json()).then(json => { const messageCount = json.count; console.log(messageCount); document.getElementById("messageCount").innerHTML = messageCount; 
