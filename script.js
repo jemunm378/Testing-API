@@ -1,1 +1,0 @@
-fetch("https://cors-anywhere.herokuapp.com/https://api.scratch.mit.edu/users/" + user +"/messages/count").then(res => res.json()).then(json => { const messageCount = json.count; console.log(messageCount); document.getElementById("messageCount").innerHTML = messageCount; 
