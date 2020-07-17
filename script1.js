@@ -1,9 +1,1 @@
-fetch('https://api.scratch.mit.edu/users/you/messages/count', {
-  method: 'GET',
-  })
-.then(response => response.json())
-                                  
-.then(data => {
-  console.log(data);
-                     
-});
+fetch("https://api.scratch.mit.edu/users/jemunm/messages/count").then(res => res.json()).then(console.log)
